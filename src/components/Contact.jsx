@@ -1,17 +1,44 @@
 import { useState } from 'react';
 import { Phone, Mail, Briefcase, GitBranch, MapPin, CheckCircle, Download } from 'lucide-react';
+import emailjs from '@emailjs/browser';
+
+// Initialiser EmailJS (remplacer YOUR_PUBLIC_KEY par votre clé)
+emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
 
 export default function Contact() {
   const [form, setForm] = useState({ name: '', email: '', msg: '' });
   const [sent, setSent] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
 
-  const submit = (e) => {
+  const submit = async (e) => {
     e.preventDefault();
-    setSent(true);
-    setTimeout(() => {
+    setLoading(true);
+    setError('');
+
+    try {
+      await emailjs.send(
+        import.meta.env.VITE_EMAILJS_SERVICE_ID,
+        import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
+        {
+          from_name: form.name,
+          from_email: form.email,
+          message: form.msg,
+          to_email: 'raharijaonatolotra2@gmail.com'
+        }
+      );
+
+      setSent(true);
       setForm({ name: '', email: '', msg: '' });
-      setSent(false);
-    }, 3000);
+      setTimeout(() => {
+        setSent(false);
+      }, 3000);
+    } catch (err) {
+      setError('Erreur lors de l\'envoi. Veuillez réessayer.');
+      console.error('Erreur EmailJS:', err);
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -76,6 +103,19 @@ export default function Contact() {
             </div>
           ) : (
             <form onSubmit={submit}>
+              {error && (
+                <div style={{ 
+                  padding: '12px 16px', 
+                  backgroundColor: 'rgba(239, 68, 68, 0.1)', 
+                  border: '1px solid rgba(239, 68, 68, 0.3)',
+                  borderRadius: '8px',
+                  marginBottom: '20px',
+                  color: '#ef4444',
+                  fontSize: '14px'
+                }}>
+                  {error}
+                </div>
+              )}
               <div className="form-group">
                 <label>Nom</label>
                 <input
@@ -84,6 +124,7 @@ export default function Contact() {
                   value={form.name}
                   onChange={e => setForm({ ...form, name: e.target.value })}
                   required
+                  disabled={loading}
                 />
               </div>
               <div className="form-group">
@@ -94,6 +135,7 @@ export default function Contact() {
                   value={form.email}
                   onChange={e => setForm({ ...form, email: e.target.value })}
                   required
+                  disabled={loading}
                 />
               </div>
               <div className="form-group">
@@ -103,10 +145,11 @@ export default function Contact() {
                   value={form.msg}
                   onChange={e => setForm({ ...form, msg: e.target.value })}
                   required
+                  disabled={loading}
                 />
               </div>
-              <button type="submit" className="btn-submit">
-                Envoyer le message →
+              <button type="submit" className="btn-submit" disabled={loading}>
+                {loading ? 'Envoi en cours...' : 'Envoyer le message →'}
               </button>
             </form>
           )}
