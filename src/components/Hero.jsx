@@ -45,10 +45,6 @@ export default function Hero() {
             <span className="stat-number">15+</span>
             <span className="stat-label">Technologies</span>
           </div>
-          <div className="stat-item">
-            <span className="stat-number">∞</span>
-            <span className="stat-label">Curiosité</span>
-          </div>
         </div>
       </div>
     </section>

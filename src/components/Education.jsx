@@ -10,7 +10,7 @@ export default function Education() {
         </h2>
       </div>
 
-      <div style={{ display: 'grid', gridTemplateColumns: '1.2fr 1fr', gap: '32px' }}>
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(350px, 1fr))', gap: '32px' }}>
         {/* Education */}
         <div className="education-list">
         {EDUCATION.map((edu, i) => (
