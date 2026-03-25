@@ -34,6 +34,10 @@ export default function Hero() {
         </div>
         <div className="hero-stats">
           <div className="stat-item">
+            <span className="stat-number">+31</span>
+            <span className="stat-label">Compétences</span>
+          </div>
+          <div className="stat-item">
             <span className="stat-number">4+</span>
             <span className="stat-label">Projets réalisés</span>
           </div>
