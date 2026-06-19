@@ -10,6 +10,7 @@ export default function Contact() {
   const [sent, setSent] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
+  const cvHref = `${import.meta.env.BASE_URL}CV-Odilon_RAHARIJAONA-IT-Support.pdf`;
 
   const submit = async (e) => {
     e.preventDefault();
@@ -159,7 +160,7 @@ export default function Contact() {
         <div style={{ fontSize: '24px', marginBottom: '16px', color: 'var(--primary)' }}><Download size={40} /></div>
         <h3 style={{ fontFamily: 'var(--font-display)', fontSize: '22px', marginBottom: '12px', color: 'var(--text)' }}>Télécharger mon CV</h3>
         <p style={{ color: 'var(--text-muted)', marginBottom: '24px' }}>Retrouvez l'ensemble de mon parcours, compétences et formations en un document.</p>
-        <a className="btn-primary" href="/Curriculum-vitae-Tolojanahary.pdf" download>
+        <a className="btn-primary" href={cvHref} download>
           ↓ Télécharger le CV (PDF)
         </a>
       </div>
