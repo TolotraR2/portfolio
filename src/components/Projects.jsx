@@ -1,12 +1,13 @@
 import { PROJECTS } from '../data';
-import { Lock, Package, Ticket, FileText, CheckCircle } from 'lucide-react';
+import { Lock, Package, Ticket, FileText, CheckCircle, ClipboardCheck } from 'lucide-react';
 
 const iconMap = {
   Lock,
   Package,
   Ticket,
   FileText,
-  CheckCircle
+  CheckCircle,
+  ClipboardCheck
 };
 
 export default function Projects() {
@@ -22,7 +23,7 @@ export default function Projects() {
         {PROJECTS.map((p, i) => {
           const IconComponent = iconMap[p.icon];
           return (
-            <div key={p.name} className="project-card">
+            <div key={p.name} className={`project-card${p.featured ? ' project-featured' : ''}`}>
               <div className="project-image" style={{ background: p.color }}>
                 {IconComponent && <IconComponent size={48} className="project-icon" />}
               </div>

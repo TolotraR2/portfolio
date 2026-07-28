@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { SKILLS } from '../data';
-import { Monitor, Network, Rocket, Lock, Code2, Zap, Database, Wrench } from 'lucide-react';
+import { Server, Network, Cloud, Code2, Rocket, Lock, Zap, Database } from 'lucide-react';
 
 export default function Skills() {
   useEffect(() => {
@@ -18,14 +18,14 @@ export default function Skills() {
   }, []);
 
   const iconMap = {
-    Monitor,
+    Server,
     Network,
+    Cloud,
+    Code2,
     Rocket,
     Lock,
-    Code2,
     Zap,
-    Database,
-    Wrench
+    Database
   };
 
   return (

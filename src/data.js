@@ -1,60 +1,77 @@
 export const SKILLS = [
   {
-    cat: "Systèmes",
-    icon: "Monitor",
+    cat: "Administration Système",
+    icon: "Server",
     items: [
-      { name: "Linux (Ubuntu, Debian, Mint, Parrot)", pct: 88 },
-      { name: "Windows Server", pct: 82 },
-      { name: "Active Directory", pct: 82 },
-      { name: "Maintenance et réinstallation des systèmes", pct: 85 }
+      { name: "Windows Server", pct: 85 },
+      { name: "Active Directory", pct: 85 },
+      { name: "Microsoft 365", pct: 88 },
+      { name: "Microsoft Entra ID", pct: 85 },
+      { name: "Microsoft Intune", pct: 82 },
+      { name: "Exchange Online", pct: 85 }
     ]
   },
   {
-    cat: "Réseaux & Support",
+    cat: "Réseau",
     icon: "Network",
     items: [
-      { name: "Configuration réseau (DNS, DHCP)", pct: 85 },
-      { name: "Diagnostic et résolution d'incidents", pct: 84 },
-      { name: "Support IT (niveau 1 / niveau 2)", pct: 85 },
-      { name: "Gestion des utilisateurs et accès", pct: 83 }
+      { name: "Fortinet FortiGate", pct: 82 },
+      { name: "Ubiquiti UniFi", pct: 85 },
+      { name: "TCP/IP", pct: 88 },
+      { name: "DHCP / DNS", pct: 88 },
+      { name: "VLAN", pct: 80 },
+      { name: "Wi-Fi Enterprise", pct: 82 }
     ]
   },
   {
-    cat: "Virtualisation & DevOps",
-    icon: "Rocket",
+    cat: "Cloud & Collaboration",
+    icon: "Cloud",
     items: [
-      { name: "Proxmox VE", pct: 85 },
-      { name: "VMware", pct: 83 },
-      { name: "Docker", pct: 72 }
-    ]
-  },
-  {
-    cat: "Sécurité",
-    icon: "Lock",
-    items: [
-      { name: "pfSense", pct: 80 },
-      { name: "Filtrage réseau (MAC)", pct: 78 },
-      { name: "Nmap", pct: 75 },
-      { name: "Notions OWASP", pct: 76 }
+      { name: "Microsoft Teams", pct: 90 },
+      { name: "SharePoint Online", pct: 82 },
+      { name: "OneDrive", pct: 85 },
+      { name: "Power Automate", pct: 78 },
+      { name: "Microsoft Forms", pct: 80 },
+      { name: "Power BI", pct: 75 }
     ]
   },
   {
     cat: "Développement",
     icon: "Code2",
     items: [
-      { name: "Python", pct: 80 },
-      { name: "Django", pct: 78 },
-      { name: "React", pct: 85 },
-      { name: "Node.js", pct: 80 },
-      { name: "PHP", pct: 75 },
-      { name: "C++ (notions)", pct: 65 }
+      { name: "React", pct: 88 },
+      { name: "Next.js", pct: 82 },
+      { name: "NestJS", pct: 78 },
+      { name: "Node.js", pct: 85 },
+      { name: "TypeScript", pct: 82 },
+      { name: "PostgreSQL / MySQL", pct: 82 }
+    ]
+  },
+  {
+    cat: "Virtualisation",
+    icon: "Rocket",
+    items: [
+      { name: "VMware", pct: 85 },
+      { name: "Proxmox VE", pct: 88 },
+      { name: "Docker", pct: 75 }
+    ]
+  },
+  {
+    cat: "Cybersécurité",
+    icon: "Lock",
+    items: [
+      { name: "OWASP ZAP", pct: 75 },
+      { name: "Nmap", pct: 78 },
+      { name: "Nikto", pct: 72 },
+      { name: "Notions pfSense", pct: 80 }
     ]
   },
   {
     cat: "Scripting & Automatisation",
     icon: "Zap",
     items: [
-      { name: "Bash", pct: 82 },
+      { name: "Bash", pct: 85 },
+      { name: "PowerShell", pct: 80 },
       { name: "Batch (Windows)", pct: 78 }
     ]
   },
@@ -62,20 +79,9 @@ export const SKILLS = [
     cat: "Bases de données",
     icon: "Database",
     items: [
-      { name: "PostgreSQL", pct: 82 },
-      { name: "MySQL", pct: 80 },
-      { name: "SQLite", pct: 78 }
-    ]
-  },
-  {
-    cat: "Outils",
-    icon: "Wrench",
-    items: [
-      { name: "Git / GitHub", pct: 88 },
-      { name: "WampServer", pct: 80 },
-      { name: "Apache / Nginx", pct: 82 },
-      { name: "Nextcloud", pct: 85 },
-      { name: "WinDev", pct: 70 }
+      { name: "PostgreSQL", pct: 85 },
+      { name: "MySQL", pct: 82 },
+      { name: "SQLite", pct: 80 }
     ]
   }
 ];
@@ -127,9 +133,78 @@ export const QUALITIES = [
 
 export const EXPS = [
   {
+    company: "AFG Assurances — Antananarivo Ivandry",
+    role: "Administrateur Systèmes & Réseaux",
+    period: "Juin 2026 – Aujourd'hui",
+    icon: "ShieldCheck",
+    desc: "Administration complète de l'infrastructure IT : Microsoft 365, Entra ID, Intune, Exchange Online, SharePoint et Teams. Gestion réseau avec Fortinet FortiGate et Ubiquiti UniFi. Support utilisateurs, impression, système de pointage. Participation au développement d'un système de gestion des évaluations et à l'automatisation des processus internes.",
+    tags: [
+      "Microsoft 365", "Entra ID", "Intune", "Exchange Online",
+      "Fortinet FortiGate", "Ubiquiti UniFi", "SharePoint",
+      "Microsoft Teams", "Power Automate", "Support IT"
+    ],
+    details: [
+      {
+        category: "Infrastructure",
+        items: [
+          "Administration Microsoft 365, Entra ID, Intune",
+          "Gestion des utilisateurs et des licences",
+          "Support Microsoft Teams, Exchange Online, SharePoint"
+        ]
+      },
+      {
+        category: "Réseau",
+        items: [
+          "Déploiement de 3 points d'accès Ubiquiti UniFi",
+          "Administration du contrôleur UniFi",
+          "Administration du pare-feu Fortinet FortiGate",
+          "Configuration réseau et dépannage"
+        ]
+      },
+      {
+        category: "Support IT",
+        items: [
+          "Installation et configuration des postes utilisateurs",
+          "Maintenance informatique et assistance utilisateurs",
+          "Diagnostic des incidents"
+        ]
+      },
+      {
+        category: "Impression",
+        items: [
+          "Configuration d'imprimantes professionnelles Canon et HP",
+          "Mise en place du Scan-to-Email avec Microsoft 365"
+        ]
+      },
+      {
+        category: "Système de pointage",
+        items: [
+          "Installation, configuration et déploiement",
+          "Mise en production et support"
+        ]
+      },
+      {
+        category: "Développement",
+        items: [
+          "Système de gestion des évaluations du personnel",
+          "Campagnes d'évaluation, auto-évaluation, validation managers/RH",
+          "Gestion des objectifs, compétences et signatures",
+          "Tableau de bord et reporting"
+        ]
+      },
+      {
+        category: "Automatisation",
+        items: [
+          "Microsoft Power Automate, Forms, SharePoint",
+          "Microsoft Teams, Power BI"
+        ]
+      }
+    ]
+  },
+  {
     company: "Nexus-SARLU",
     role: "Stagiaire Administration Systèmes & Réseaux",
-    period: "Février – Présent",
+    period: "Janvier – Mars 2026",
     icon: "Server",
     desc: "Déploiement de solutions de stockage et virtualisation. Gestion des utilisateurs (LDAP / Active Directory). Réalisation d'audits de sécurité. Maintenance systèmes et support technique. Sécurisation des infrastructures.",
     tags: ["Proxmox", "Nextcloud", "LDAP", "Active Directory", "Audit Sécurité", "Infrastructure IT"]
@@ -161,6 +236,15 @@ export const EXPS = [
 ];
 
 export const PROJECTS = [
+  {
+    name: "Système de Gestion des Évaluations",
+    icon: "ClipboardCheck",
+    color: "var(--bg3)",
+    desc: "Système complet de gestion des évaluations du personnel comprenant les campagnes d'évaluation, l'auto-évaluation, la validation des managers et RH, la gestion des objectifs, compétences et signatures, avec un tableau de bord interactif.",
+    techs: ["React", "Node.js", "Microsoft 365", "Power Automate", "SharePoint"],
+    category: "Enterprise",
+    featured: true
+  },
   {
     name: "Infrastructure Nextcloud",
     icon: "Lock",
@@ -200,5 +284,56 @@ export const PROJECTS = [
     desc: "Gestion de stratégie de paris basée sur la roulette. Gestion des mises et logique métier. Interface utilisateur moderne. Projet freelance avec client réel.",
     techs: ["React", "Vite", "TypeScript", "Tailwind CSS"],
     category: "Finance"
+  }
+];
+
+export const ACHIEVEMENTS = [
+  {
+    icon: "Wifi",
+    title: "Déploiement UniFi",
+    desc: "Déploiement de 3 points d'accès Ubiquiti UniFi et administration du contrôleur",
+    category: "Réseau"
+  },
+  {
+    icon: "Shield",
+    title: "Administration FortiGate",
+    desc: "Administration du pare-feu Fortinet FortiGate et configuration réseau",
+    category: "Sécurité"
+  },
+  {
+    icon: "Cloud",
+    title: "Microsoft 365",
+    desc: "Administration complète de Microsoft 365, Entra ID et Intune",
+    category: "Cloud"
+  },
+  {
+    icon: "Users",
+    title: "Gestion des utilisateurs",
+    desc: "Gestion des utilisateurs, licences et support Microsoft Teams",
+    category: "Administration"
+  },
+  {
+    icon: "Printer",
+    title: "Scan-to-Email",
+    desc: "Configuration d'imprimantes Canon/HP et mise en place du Scan-to-Email M365",
+    category: "Support"
+  },
+  {
+    icon: "ClipboardCheck",
+    title: "Système de pointage",
+    desc: "Installation, configuration, déploiement et mise en production du système de pointage",
+    category: "Infrastructure"
+  },
+  {
+    icon: "FileCheck",
+    title: "Système d'évaluations",
+    desc: "Développement d'un système de gestion des évaluations du personnel avec validation RH",
+    category: "Développement"
+  },
+  {
+    icon: "Workflow",
+    title: "Automatisation M365",
+    desc: "Étude de l'automatisation des processus internes avec Power Automate, Forms et Power BI",
+    category: "Automatisation"
   }
 ];

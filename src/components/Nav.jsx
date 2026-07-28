@@ -9,8 +9,8 @@ export default function Nav({ menuOpen, setMenuOpen }) {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const links = ['À propos', 'Compétences', 'Expériences', 'Éducation', 'Projets', 'Contact'];
-  const ids = ['about', 'skills', 'experience', 'education', 'projects', 'contact'];
+  const links = ['À propos', 'Compétences', 'Expériences', 'Réalisations', 'Éducation', 'Projets', 'Contact'];
+  const ids = ['about', 'skills', 'experience', 'achievements', 'education', 'projects', 'contact'];
 
   const scroll = (id) => {
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });

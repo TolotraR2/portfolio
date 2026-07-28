@@ -12,17 +12,18 @@ export default function Hero() {
       <div className="hero-content">
         <div className="hero-badge">
           <span className="hero-badge-dot" />
-          Consultant IT Junior • Madagascar
+          Administrateur Systèmes & Réseaux • AFG Assurances
         </div>
         <h1 className="hero-title">
           RAHARIJAONA <span className="hero-name">TOLOJANAHARY</span>
         </h1>
         <p className="hero-subtitle">
-          Infrastructure IT & Solutions Numériques
+          Infrastructure IT & Développement Full Stack
         </p>
         <p className="hero-desc">
-          Passionné par les systèmes et réseaux, je conçois des infrastructures robustes 
-          et développe des solutions web performantes pour transformer vos idées en réalité.
+          Administrateur Systèmes & Réseaux passionné, je gère les infrastructures cloud 
+          Microsoft 365 et développe des solutions web performantes pour transformer 
+          les processus métier en outils digitaux.
         </p>
         <div className="hero-ctas">
           <a className="btn-primary" href="#" onClick={(e) => { e.preventDefault(); scrollToSection('projects'); }}>
@@ -34,20 +35,20 @@ export default function Hero() {
         </div>
         <div className="hero-stats">
           <div className="stat-item">
-            <span className="stat-number">+31</span>
-            <span className="stat-label">Compétences</span>
-          </div>
-          <div className="stat-item">
-            <span className="stat-number">4+</span>
-            <span className="stat-label">Projets réalisés</span>
-          </div>
-          <div className="stat-item">
-            <span className="stat-number">3</span>
+            <span className="stat-number">5+</span>
             <span className="stat-label">Expériences</span>
           </div>
           <div className="stat-item">
-            <span className="stat-number">15+</span>
+            <span className="stat-number">6+</span>
+            <span className="stat-label">Projets réalisés</span>
+          </div>
+          <div className="stat-item">
+            <span className="stat-number">35+</span>
             <span className="stat-label">Technologies</span>
+          </div>
+          <div className="stat-item">
+            <span className="stat-number">2+</span>
+            <span className="stat-label">Années d'expérience</span>
           </div>
         </div>
       </div>

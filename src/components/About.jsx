@@ -1,36 +1,36 @@
-import { Monitor, Cloud, Code2, Wrench, Database, Globe } from 'lucide-react';
+import { Monitor, Cloud, Code2, Wrench, Shield, Globe } from 'lucide-react';
 
 export default function About() {
   const items = [
     { 
-      icon: Monitor, 
-      title: "Systèmes & Réseaux", 
-      sub: "Linux, Windows Server, AD, TCP/IP" 
+      icon: Shield, 
+      title: "Administration Systèmes & Réseaux", 
+      sub: "Microsoft 365, Entra ID, Intune" 
     },
     { 
       icon: Cloud, 
-      title: "Virtualisation", 
-      sub: "Proxmox, VMware, gestion VMs" 
+      title: "Cloud Microsoft 365", 
+      sub: "Exchange Online, SharePoint, Teams" 
+    },
+    { 
+      icon: Globe, 
+      title: "Infrastructure Réseau", 
+      sub: "Fortinet FortiGate, Ubiquiti UniFi" 
     },
     { 
       icon: Code2, 
-      title: "Développement Web", 
-      sub: "React, Django, Node.js, REST API" 
+      title: "Développement Full Stack", 
+      sub: "React, Next.js, NestJS, Node.js" 
     },
     { 
       icon: Wrench, 
       title: "Support IT", 
-      sub: "Helpdesk, maintenance, ticketing" 
+      sub: "Installation, maintenance, assistance" 
     },
     { 
-      icon: Database, 
-      title: "Bases de données", 
-      sub: "PostgreSQL, SQLite, requêtes SQL" 
-    },
-    { 
-      icon: Globe, 
-      title: "Administration réseau", 
-      sub: "DHCP, DNS, routage, switching" 
+      icon: Monitor, 
+      title: "Automatisation", 
+      sub: "Power Automate, Power BI, Forms" 
     },
   ];
 
@@ -39,27 +39,33 @@ export default function About() {
       <div className="section-header">
         <div className="section-label">À propos</div>
         <h2>
-          Profil <span className="highlight">polyvalent</span><br />
-          & orienté solutions
+          Administrateur Systèmes<br />
+          <span className="highlight">& Développeur Full Stack</span>
         </h2>
       </div>
       <div className="about-grid">
         <div className="about-text">
           <p>
-            Consultant IT junior passionné par les technologies, je possède une double compétence en 
+            Administrateur Systèmes & Réseaux chez <strong style={{ color: 'var(--primary)' }}>AFG Assurances</strong>, 
+            je gère l'infrastructure IT complète : Microsoft 365, Entra ID, Intune, 
+            le réseau Fortinet FortiGate et les accès Ubiquiti UniFi.
+          </p>
+          <p>
+            Ma double compétence en 
             <strong style={{ color: 'var(--primary)' }}> administration systèmes & réseaux</strong> et en 
-            <strong style={{ color: 'var(--primary)' }}> développement web</strong>. Cette polyvalence me permet 
-            d'aborder les projets informatiques avec une vision globale.
+            <strong style={{ color: 'var(--primary)' }}> développement web</strong> me permet d'aborder les projets 
+            informatiques avec une vision globale, de l'infrastructure réseau jusqu'aux applications métier.
           </p>
           <p>
-            Après plusieurs expériences en stage dans des environnements variés (entreprise privée, 
-            institution publique, secteur assurantiel), j'ai acquis des bases solides en infrastructure IT 
-            et en gestion de parc informatique, tout en développant des applications web fonctionnelles.
+            Je suis spécialisé dans :
           </p>
-          <p>
-            Je suis actuellement <strong style={{ color: '#22c55e' }}>disponible pour des opportunités</strong> — 
-            stage, alternance, ou poste junior — où je pourrais contribuer et continuer à progresser.
-          </p>
+          <ul className="about-specializations">
+            <li>Administration Systèmes & Réseaux</li>
+            <li>Cloud Microsoft 365 & Entra ID</li>
+            <li>Microsoft Intune & Infrastructure réseau</li>
+            <li>Cybersécurité & Développement Full Stack</li>
+            <li>Automatisation des processus métier</li>
+          </ul>
         </div>
         <div className="about-info">
           {items.map(item => {

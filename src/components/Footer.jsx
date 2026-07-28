@@ -1,8 +1,8 @@
 export default function Footer() {
   return (
     <footer>
-      <p>© 2026 RAHARIJAONA TOLOJANAHARY — Consultant IT Junior</p>
-      <p>Infrastructure & Solutions Numériques — Madagascar</p>
+      <p>© 2026 RAHARIJAONA TOLOJANAHARY — Administrateur Systèmes & Réseaux</p>
+      <p>AFG Assurances — Infrastructure & Solutions Numériques</p>
     </footer>
   );
 }
