@@ -198,16 +198,18 @@ export default function Hero() {
 
           {/* z-index: 6 — Rim light (blurred copy behind photo) */}
           <img
-            src="/profil.png"
-            alt=""
+            src="/images/raharijaona-tolojanahary-tiana-odilon.jpg"
+            alt="Raharijaona Tolojanahary Tiana Odilon - Consultant IT Junior et Administrateur Systèmes et Réseaux"
+            title="Raharijaona Tolojanahary Tiana Odilon"
             className="hero-photo-rim"
             aria-hidden="true"
           />
 
           {/* z-index: 7 — Main photo */}
           <img
-            src="/profil.png"
-            alt="RAHARIJAONA Tolojanahary — Administrateur Systèmes & Réseaux"
+            src="/images/raharijaona-tolojanahary-tiana-odilon.jpg"
+            alt="Raharijaona Tolojanahary Tiana Odilon - Consultant IT Junior et Administrateur Systèmes et Réseaux"
+            title="Raharijaona Tolojanahary Tiana Odilon"
             className="hero-photo"
           />
         </div>
