@@ -13,9 +13,9 @@ const iconMap = {
 
 export default function Skills() {
   return (
-    <section id="skills">
+    <section id="skills" className="fade-in">
       <div className="section-header">
-        <div className="section-label">Compétences</div>
+        <div className="section-label">- Compétences -</div>
         <h2>
           Compétences <span className="highlight">techniques</span>
         </h2>

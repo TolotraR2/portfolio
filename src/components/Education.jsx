@@ -2,9 +2,9 @@ import { EDUCATION, LANGUAGES, QUALITIES } from '../data';
 
 export default function Education() {
   return (
-    <section id="education">
+    <section id="education" className="fade-in">
       <div className="section-header">
-        <div className="section-label">Formation</div>
+        <div className="section-label">- Formation -</div>
         <h2>
           Éducation & <span className="highlight">Qualités</span>
         </h2>

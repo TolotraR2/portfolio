@@ -11,9 +11,9 @@ const iconMap = {
 
 export default function Experience() {
   return (
-    <section id="experience">
+    <section id="experience" className="fade-in">
       <div className="section-header">
-        <div className="section-label">Expériences</div>
+        <div className="section-label">- Expériences -</div>
         <h2>
           Parcours <span className="highlight">professionnel</span>
         </h2>

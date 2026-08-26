@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <!-- Connection lines -->
+  <line x1="256" y1="160" x2="120" y2="80" stroke="#00bcd4" stroke-width="16" stroke-linecap="round" opacity="0.7"/>
+  <line x1="256" y1="160" x2="392" y2="80" stroke="#00bcd4" stroke-width="16" stroke-linecap="round" opacity="0.7"/>
+  <line x1="256" y1="160" x2="96" y2="280" stroke="#00bcd4" stroke-width="16" stroke-linecap="round" opacity="0.7"/>
+  <line x1="256" y1="160" x2="416" y2="280" stroke="#00bcd4" stroke-width="16" stroke-linecap="round" opacity="0.7"/>
+  <line x1="256" y1="160" x2="256" y2="360" stroke="#00bcd4" stroke-width="16" stroke-linecap="round" opacity="0.7"/>
+  <!-- Secondary connections between peripheral nodes -->
+  <line x1="120" y1="80" x2="96" y2="280" stroke="#00bcd4" stroke-width="8" stroke-linecap="round" opacity="0.3"/>
+  <line x1="392" y1="80" x2="416" y2="280" stroke="#00bcd4" stroke-width="8" stroke-linecap="round" opacity="0.3"/>
+  <line x1="96" y1="280" x2="256" y2="360" stroke="#00bcd4" stroke-width="8" stroke-linecap="round" opacity="0.3"/>
+  <line x1="416" y1="280" x2="256" y2="360" stroke="#00bcd4" stroke-width="8" stroke-linecap="round" opacity="0.3"/>
+  <!-- Central node (hub) -->
+  <circle cx="256" cy="160" r="32" fill="#00bcd4"/>
+  <circle cx="256" cy="160" r="18" fill="#0d47a1"/>
+  <!-- Peripheral nodes -->
+  <circle cx="120" cy="80" r="22" fill="#00bcd4"/>
+  <circle cx="120" cy="80" r="12" fill="#0d47a1"/>
+  <circle cx="392" cy="80" r="22" fill="#00bcd4"/>
+  <circle cx="392" cy="80" r="12" fill="#0d47a1"/>
+  <circle cx="96" cy="280" r="22" fill="#00bcd4"/>
+  <circle cx="96" cy="280" r="12" fill="#0d47a1"/>
+  <circle cx="416" cy="280" r="22" fill="#00bcd4"/>
+  <circle cx="416" cy="280" r="12" fill="#0d47a1"/>
+  <circle cx="256" cy="360" r="22" fill="#00bcd4"/>
+  <circle cx="256" cy="360" r="12" fill="#0d47a1"/>
+</svg>

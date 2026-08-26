@@ -35,9 +35,9 @@ export default function About() {
   ];
 
   return (
-    <section id="about">
+    <section id="about" className="fade-in">
       <div className="section-header">
-        <div className="section-label">À propos</div>
+        <div className="section-label">- À propos -</div>
         <h2>
           À propos de <span className="highlight">moi</span>
         </h2>

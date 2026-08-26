@@ -62,9 +62,9 @@ export default function Projects() {
   const totalStr = String(total).padStart(2, '0');
 
   return (
-    <section id="projects">
+    <section id="projects" className="fade-in">
       <div className="section-header">
-        <div className="section-label">Projets</div>
+        <div className="section-label">- Projets -</div>
         <h2>Mes projets</h2>
         <p className="section-subtitle">Des solutions concrètes que j'ai conçues et développées.</p>
       </div>
@@ -119,12 +119,14 @@ export default function Projects() {
           </AnimatePresence>
         </div>
 
-        <button className="carousel-btn carousel-btn-prev" onClick={() => paginate(-1)} aria-label="Projet précédent">
-          <ChevronLeft size={20} />
-        </button>
-        <button className="carousel-btn carousel-btn-next" onClick={() => paginate(1)} aria-label="Projet suivant">
-          <ChevronRight size={20} />
-        </button>
+        <div className="carousel-nav-row">
+          <button className="carousel-btn carousel-btn-prev" onClick={() => paginate(-1)} aria-label="Projet précédent">
+            <ChevronLeft size={20} />
+          </button>
+          <button className="carousel-btn carousel-btn-next" onClick={() => paginate(1)} aria-label="Projet suivant">
+            <ChevronRight size={20} />
+          </button>
+        </div>
 
         <div className="carousel-dots">
           {PROJECTS.map((_, i) => (

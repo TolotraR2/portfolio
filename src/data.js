@@ -9,7 +9,8 @@ export const SKILLS = [
       "Active Directory",
       "VMware",
       "Proxmox VE",
-      "Docker"
+      "Docker",
+      "Nextcloud"
     ]
   },
   {
@@ -21,9 +22,8 @@ export const SKILLS = [
       "DNS",
       "VLAN",
       "Wi-Fi",
-      "Administration réseau",
-      "Diagnostic réseau",
-      "pfSense"
+      "pfSense",
+      "Ubiquiti UniFi"
     ]
   },
   {
@@ -31,9 +31,8 @@ export const SKILLS = [
     icon: "Cloud",
     items: [
       "Microsoft 365",
-      "Microsoft Entra ID",
-      "Microsoft Intune",
-      "Microsoft Teams",
+      "Entra ID",
+      "Intune",
       "Exchange Online"
     ]
   },
@@ -53,35 +52,43 @@ export const SKILLS = [
     items: [
       "PostgreSQL",
       "MySQL",
-      "SQLite"
+      "SQLite",
+      "Prisma"
     ]
   },
   {
     cat: "Développement",
     icon: "Code2",
     items: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "TypeScript",
+      "Python",
       "React",
       "Next.js",
-      "TypeScript",
-      "JavaScript",
+      "Vite",
+      "Tailwind CSS",
       "Node.js",
+      "Express.js",
       "NestJS",
       "Django",
       "Flutter",
-      "Dart"
+      "Dart",
+      "Android",
+      "Android SDK"
     ]
   },
   {
     cat: "Déploiement & Mise en ligne",
     icon: "Rocket",
     items: [
-      "Déploiement de sites web",
-      "Mise en ligne d'applications",
-      "Configuration d'environnements de production",
       "Vercel",
       "Render",
-      "Gestion d'hébergement",
-      "Déploiement et maintenance d'applications web"
+      "Git",
+      "GitHub",
+      "Déploiement d'applications web",
+      "Mise en production"
     ]
   }
 ];

@@ -12,9 +12,9 @@ const iconMap = {
 
 export default function Achievements() {
   return (
-    <section id="achievements">
+    <section id="achievements" className="fade-in">
       <div className="section-header">
-        <div className="section-label">Réalisations</div>
+        <div className="section-label">- Réalisations -</div>
         <h2>
           Réalisations <span className="highlight">professionnelles</span>
         </h2>

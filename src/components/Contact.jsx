@@ -42,9 +42,9 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact">
+    <section id="contact" className="fade-in">
       <div className="section-header">
-        <div className="section-label">Contact</div>
+        <div className="section-label">- Contact -</div>
         <h2>
           Travaillons <span className="highlight">ensemble</span>
         </h2>
