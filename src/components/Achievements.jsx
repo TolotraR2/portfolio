@@ -1,15 +1,13 @@
 import { ACHIEVEMENTS } from '../data';
-import { Wifi, Shield, Cloud, Users, Printer, ClipboardCheck, FileCheck, Workflow } from 'lucide-react';
+import { Wifi, Cloud, Users, Printer, ClipboardCheck, FileCheck } from 'lucide-react';
 
 const iconMap = {
   Wifi,
-  Shield,
   Cloud,
   Users,
   Printer,
   ClipboardCheck,
-  FileCheck,
-  Workflow
+  FileCheck
 };
 
 export default function Achievements() {
@@ -22,12 +20,12 @@ export default function Achievements() {
         </h2>
       </div>
       <div className="achievements-grid">
-        {ACHIEVEMENTS.map((a, i) => {
+        {ACHIEVEMENTS.map((a) => {
           const IconComponent = iconMap[a.icon];
           return (
             <div key={a.title} className="achievement-card">
               <div className="achievement-icon-wrapper">
-                {IconComponent && <IconComponent size={28} className="achievement-icon" />}
+                {IconComponent && <IconComponent size={24} className="achievement-icon" />}
               </div>
               <div className="achievement-content">
                 <span className="achievement-category">{a.category}</span>

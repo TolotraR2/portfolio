@@ -2,35 +2,35 @@ import { Monitor, Cloud, Code2, Wrench, Shield, Globe } from 'lucide-react';
 
 export default function About() {
   const items = [
-    { 
-      icon: Shield, 
-      title: "Administration Systèmes & Réseaux", 
-      sub: "Microsoft 365, Entra ID, Intune" 
+    {
+      icon: Shield,
+      title: "Administration Systèmes & Réseaux",
+      sub: "Windows Server, Active Directory, Entra ID"
     },
-    { 
-      icon: Cloud, 
-      title: "Cloud Microsoft 365", 
-      sub: "Exchange Online, SharePoint, Teams" 
+    {
+      icon: Cloud,
+      title: "Microsoft 365",
+      sub: "Exchange Online, Intune, Teams"
     },
-    { 
-      icon: Globe, 
-      title: "Infrastructure Réseau", 
-      sub: "Fortinet FortiGate, Ubiquiti UniFi" 
+    {
+      icon: Globe,
+      title: "Infrastructure Réseau",
+      sub: "TCP/IP, VLAN, Wi-Fi, Ubiquiti UniFi"
     },
-    { 
-      icon: Code2, 
-      title: "Développement Full Stack", 
-      sub: "React, Next.js, NestJS, Node.js" 
+    {
+      icon: Code2,
+      title: "Développement",
+      sub: "React, Next.js, Node.js, Django"
     },
-    { 
-      icon: Wrench, 
-      title: "Support IT", 
-      sub: "Installation, maintenance, assistance" 
+    {
+      icon: Wrench,
+      title: "Support IT",
+      sub: "Installation, maintenance, assistance"
     },
-    { 
-      icon: Monitor, 
-      title: "Automatisation", 
-      sub: "Power Automate, Power BI, Forms" 
+    {
+      icon: Monitor,
+      title: "Virtualisation",
+      sub: "VMware, Proxmox, Docker"
     },
   ];
 
@@ -39,32 +39,29 @@ export default function About() {
       <div className="section-header">
         <div className="section-label">À propos</div>
         <h2>
-          Administrateur Systèmes<br />
-          <span className="highlight">& Développeur Full Stack</span>
+          À propos de <span className="highlight">moi</span>
         </h2>
       </div>
       <div className="about-grid">
         <div className="about-text">
           <p>
-            Administrateur Systèmes & Réseaux chez <strong style={{ color: 'var(--primary)' }}>AFG Assurances</strong>, 
-            je gère l'infrastructure IT complète : Microsoft 365, Entra ID, Intune, 
-            le réseau Fortinet FortiGate et les accès Ubiquiti UniFi.
+            Administrateur Systèmes & Réseaux de formation, je m'intéresse à l'administration
+            des infrastructures informatiques, aux réseaux, au support IT et au développement
+            de solutions numériques.
           </p>
           <p>
-            Ma double compétence en 
-            <strong style={{ color: 'var(--primary)' }}> administration systèmes & réseaux</strong> et en 
-            <strong style={{ color: 'var(--primary)' }}> développement web</strong> me permet d'aborder les projets 
-            informatiques avec une vision globale, de l'infrastructure réseau jusqu'aux applications métier.
+            Ma double compétence en infrastructure et en développement me permet également de
+            concevoir des outils adaptés aux besoins des utilisateurs et des entreprises.
           </p>
           <p>
             Je suis spécialisé dans :
           </p>
           <ul className="about-specializations">
-            <li>Administration Systèmes & Réseaux</li>
-            <li>Cloud Microsoft 365 & Entra ID</li>
-            <li>Microsoft Intune & Infrastructure réseau</li>
-            <li>Cybersécurité & Développement Full Stack</li>
-            <li>Automatisation des processus métier</li>
+            <li>Administration systèmes & réseaux</li>
+            <li>Microsoft 365, Entra ID & Intune</li>
+            <li>Infrastructure réseau & support IT</li>
+            <li>Cybersécurité & bases de données</li>
+            <li>Développement et déploiement de solutions numériques</li>
           </ul>
         </div>
         <div className="about-info">
@@ -72,7 +69,7 @@ export default function About() {
             const IconComp = item.icon;
             return (
             <div key={item.title} className="info-item">
-              <div className="info-icon"><IconComp size={28} className="about-icon" /></div>
+              <div className="info-icon"><IconComp size={22} className="about-icon" /></div>
               <div className="info-content">
                 <h4>{item.title}</h4>
                 <p>{item.sub}</p>

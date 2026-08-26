@@ -20,14 +20,16 @@ export default function App() {
     <>
       <div className="bg-pattern" />
       <Nav menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      <Hero />
-      <About />
-      <Skills />
-      <Experience />
-      <Achievements />
-      <Education />
-      <Projects />
-      <Contact />
+      <main>
+        <Hero />
+        <About />
+        <Skills />
+        <Experience />
+        <Achievements />
+        <Education />
+        <Projects />
+        <Contact />
+      </main>
       <Footer />
     </>
   );

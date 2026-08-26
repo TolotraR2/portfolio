@@ -1,87 +1,87 @@
 export const SKILLS = [
   {
-    cat: "Administration Système",
+    cat: "Systèmes & Infrastructure",
     icon: "Server",
     items: [
-      { name: "Windows Server", pct: 85 },
-      { name: "Active Directory", pct: 85 },
-      { name: "Microsoft 365", pct: 88 },
-      { name: "Microsoft Entra ID", pct: 85 },
-      { name: "Microsoft Intune", pct: 82 },
-      { name: "Exchange Online", pct: 85 }
+      "Windows",
+      "Windows Server",
+      "Linux",
+      "Active Directory",
+      "VMware",
+      "Proxmox VE",
+      "Docker"
     ]
   },
   {
-    cat: "Réseau",
+    cat: "Réseaux",
     icon: "Network",
     items: [
-      { name: "Fortinet FortiGate", pct: 82 },
-      { name: "Ubiquiti UniFi", pct: 85 },
-      { name: "TCP/IP", pct: 88 },
-      { name: "DHCP / DNS", pct: 88 },
-      { name: "VLAN", pct: 80 },
-      { name: "Wi-Fi Enterprise", pct: 82 }
+      "TCP/IP",
+      "DHCP",
+      "DNS",
+      "VLAN",
+      "Wi-Fi",
+      "Administration réseau",
+      "Diagnostic réseau",
+      "pfSense"
     ]
   },
   {
-    cat: "Cloud & Collaboration",
+    cat: "Microsoft",
     icon: "Cloud",
     items: [
-      { name: "Microsoft Teams", pct: 90 },
-      { name: "SharePoint Online", pct: 82 },
-      { name: "OneDrive", pct: 85 },
-      { name: "Power Automate", pct: 78 },
-      { name: "Microsoft Forms", pct: 80 },
-      { name: "Power BI", pct: 75 }
-    ]
-  },
-  {
-    cat: "Développement",
-    icon: "Code2",
-    items: [
-      { name: "React", pct: 88 },
-      { name: "Next.js", pct: 82 },
-      { name: "NestJS", pct: 78 },
-      { name: "Node.js", pct: 85 },
-      { name: "TypeScript", pct: 82 },
-      { name: "PostgreSQL / MySQL", pct: 82 }
-    ]
-  },
-  {
-    cat: "Virtualisation",
-    icon: "Rocket",
-    items: [
-      { name: "VMware", pct: 85 },
-      { name: "Proxmox VE", pct: 88 },
-      { name: "Docker", pct: 75 }
+      "Microsoft 365",
+      "Microsoft Entra ID",
+      "Microsoft Intune",
+      "Microsoft Teams",
+      "Exchange Online"
     ]
   },
   {
     cat: "Cybersécurité",
-    icon: "Lock",
+    icon: "Shield",
     items: [
-      { name: "OWASP ZAP", pct: 75 },
-      { name: "Nmap", pct: 78 },
-      { name: "Nikto", pct: 72 },
-      { name: "Notions pfSense", pct: 80 }
-    ]
-  },
-  {
-    cat: "Scripting & Automatisation",
-    icon: "Zap",
-    items: [
-      { name: "Bash", pct: 85 },
-      { name: "PowerShell", pct: 80 },
-      { name: "Batch (Windows)", pct: 78 }
+      "Nmap",
+      "Nikto",
+      "OWASP ZAP",
+      "pfSense"
     ]
   },
   {
     cat: "Bases de données",
     icon: "Database",
     items: [
-      { name: "PostgreSQL", pct: 85 },
-      { name: "MySQL", pct: 82 },
-      { name: "SQLite", pct: 80 }
+      "PostgreSQL",
+      "MySQL",
+      "SQLite"
+    ]
+  },
+  {
+    cat: "Développement",
+    icon: "Code2",
+    items: [
+      "React",
+      "Next.js",
+      "TypeScript",
+      "JavaScript",
+      "Node.js",
+      "NestJS",
+      "Django",
+      "Flutter",
+      "Dart"
+    ]
+  },
+  {
+    cat: "Déploiement & Mise en ligne",
+    icon: "Rocket",
+    items: [
+      "Déploiement de sites web",
+      "Mise en ligne d'applications",
+      "Configuration d'environnements de production",
+      "Vercel",
+      "Render",
+      "Gestion d'hébergement",
+      "Déploiement et maintenance d'applications web"
     ]
   }
 ];
@@ -92,12 +92,13 @@ export const EDUCATION = [
     year: "2024",
     degree: "Licence en Informatique",
     specialty: "Administration Système et Réseau",
-    school: "INFOCENTRE, Soavimbahoaka"
+    school: "INFOCENTRE, Soavimbahoaka",
+    featured: true
   },
   {
     id: "edu-2",
     year: "2021",
-    degree: "Brevet d'Étude Professionnel",
+    degree: "Brevet d'Étude Professionnelle",
     specialty: "Comptabilité",
     school: "Lycée Privé Stella Maris, Toamasina"
   },
@@ -137,68 +138,10 @@ export const EXPS = [
     role: "Administrateur Systèmes & Réseaux",
     period: "Juin 2026 – Aujourd'hui",
     icon: "ShieldCheck",
-    desc: "Administration complète de l'infrastructure IT : Microsoft 365, Entra ID, Intune, Exchange Online, SharePoint et Teams. Gestion réseau avec Fortinet FortiGate et Ubiquiti UniFi. Support utilisateurs, impression, système de pointage. Participation au développement d'un système de gestion des évaluations et à l'automatisation des processus internes.",
+    desc: "Administration et support de l'environnement informatique, gestion des systèmes et services Microsoft, assistance utilisateurs, maintenance des équipements et participation à des projets de digitalisation et de développement de solutions internes.",
     tags: [
       "Microsoft 365", "Entra ID", "Intune", "Exchange Online",
-      "Fortinet FortiGate", "Ubiquiti UniFi", "SharePoint",
-      "Microsoft Teams", "Power Automate", "Support IT"
-    ],
-    details: [
-      {
-        category: "Infrastructure",
-        items: [
-          "Administration Microsoft 365, Entra ID, Intune",
-          "Gestion des utilisateurs et des licences",
-          "Support Microsoft Teams, Exchange Online, SharePoint"
-        ]
-      },
-      {
-        category: "Réseau",
-        items: [
-          "Déploiement de 3 points d'accès Ubiquiti UniFi",
-          "Administration du contrôleur UniFi",
-          "Administration du pare-feu Fortinet FortiGate",
-          "Configuration réseau et dépannage"
-        ]
-      },
-      {
-        category: "Support IT",
-        items: [
-          "Installation et configuration des postes utilisateurs",
-          "Maintenance informatique et assistance utilisateurs",
-          "Diagnostic des incidents"
-        ]
-      },
-      {
-        category: "Impression",
-        items: [
-          "Configuration d'imprimantes professionnelles Canon et HP",
-          "Mise en place du Scan-to-Email avec Microsoft 365"
-        ]
-      },
-      {
-        category: "Système de pointage",
-        items: [
-          "Installation, configuration et déploiement",
-          "Mise en production et support"
-        ]
-      },
-      {
-        category: "Développement",
-        items: [
-          "Système de gestion des évaluations du personnel",
-          "Campagnes d'évaluation, auto-évaluation, validation managers/RH",
-          "Gestion des objectifs, compétences et signatures",
-          "Tableau de bord et reporting"
-        ]
-      },
-      {
-        category: "Automatisation",
-        items: [
-          "Microsoft Power Automate, Forms, SharePoint",
-          "Microsoft Teams, Power BI"
-        ]
-      }
+      "Support IT", "Réseaux", "Ubiquiti UniFi", "Systèmes"
     ]
   },
   {
@@ -237,53 +180,72 @@ export const EXPS = [
 
 export const PROJECTS = [
   {
+    name: "Genesis Capital",
+    icon: "Globe",
+    color: "var(--bg3)",
+    desc: "Conception et développement d'un site web professionnel pour une entreprise du secteur de l'assurance et du courtage.",
+    techs: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+    category: "Site web professionnel",
+    featured: true
+  },
+  {
+    name: "G-Stock",
+    icon: "Package",
+    color: "var(--bg3)",
+    desc: "Application de gestion de stock. Gestion des produits, catégories, fournisseurs, clients et magasins. Gestion des ventes, achats et mouvements de stock. Gestion de caisse avec tableau de bord et statistiques.",
+    techs: ["Django", "Python", "SQLite"],
+    category: "Application web",
+    featured: true
+  },
+  {
     name: "Système de Gestion des Évaluations",
     icon: "ClipboardCheck",
     color: "var(--bg3)",
     desc: "Système complet de gestion des évaluations du personnel comprenant les campagnes d'évaluation, l'auto-évaluation, la validation des managers et RH, la gestion des objectifs, compétences et signatures, avec un tableau de bord interactif.",
-    techs: ["React", "Node.js", "Microsoft 365", "Power Automate", "SharePoint"],
-    category: "Enterprise",
+    techs: ["Next.js", "NestJS", "PostgreSQL", "Tailwind CSS"],
+    category: "Application métier",
     featured: true
   },
   {
     name: "Infrastructure Nextcloud",
     icon: "Lock",
     color: "var(--bg3)",
-    desc: "Serveur de stockage sécurisé. Mise en place d'un serveur Nextcloud sur Debian 12. Déploiement en environnement virtualisé. Configuration réseau avec pfSense. Filtrage réseau par adresse MAC. Gestion des accès et sécurisation infrastructure.",
-    techs: ["Nextcloud", "Debian 12", "Proxmox", "pfSense", "Linux"],
+    desc: "Mise en place d'un serveur Nextcloud sur Debian 12 en environnement virtualisé. Configuration réseau avec pfSense, filtrage par adresse MAC, gestion des accès et sécurisation de l'infrastructure.",
+    techs: ["Nextcloud", "Debian", "Proxmox", "Linux", "pfSense"],
     category: "Infrastructure"
-  },
-  {
-    name: "G-Stock",
-    icon: "Package",
-    color: "var(--bg3)",
-    desc: "Application de gestion de magasin. Gestion produits, catégories, fournisseurs, clients et magasins. Gestion ventes, achats et mouvements stock. Gestion caisse (apports, dépenses). Tableau de bord avec statistiques.",
-    techs: ["Django", "Python", "SQLite"],
-    category: "Web App"
   },
   {
     name: "TIKERA",
     icon: "Ticket",
     color: "var(--bg3)",
-    desc: "Plateforme de billetterie en ligne. Interface utilisateur dynamique. Système d'envoi d'emails (notifications). Gestion des utilisateurs. Gestion complète des billets.",
-    techs: ["React", "Node.js", "PostgreSQL"],
-    category: "Full Stack"
+    desc: "Plateforme de billetterie en ligne. Interface utilisateur dynamique, système d'envoi d'emails, gestion des utilisateurs et gestion complète des billets.",
+    techs: ["Next.js", "NestJS", "Tailwind CSS", "PostgreSQL"],
+    category: "Plateforme web"
   },
   {
     name: "Job Auto Apply",
     icon: "FileText",
     color: "var(--bg3)",
-    desc: "Application d'envoi automatisé de candidatures. Gestion des entreprises et des emails. Génération dynamique de lettres de motivation. Tableau de bord avec statistiques.",
-    techs: ["React", "Node.js", "Express.js"],
-    category: "Automation"
+    desc: "Application d'envoi automatisé de candidatures. Gestion des entreprises et des emails, génération dynamique de lettres de motivation, tableau de bord avec statistiques.",
+    techs: ["React", "Node.js", "Express.js", "Vercel"],
+    category: "Application web"
   },
   {
     name: "Système 1-3-5",
     icon: "CheckCircle",
     color: "var(--bg3)",
-    desc: "Gestion de stratégie de paris basée sur la roulette. Gestion des mises et logique métier. Interface utilisateur moderne. Projet freelance avec client réel.",
-    techs: ["React", "Vite", "TypeScript", "Tailwind CSS"],
+    desc: "Solution de gestion de stratégie de paris basée sur la roulette, avec gestion des mises et logique métier. Projet freelance réalisé pour un client réel.",
+    techs: ["React", "Vite", "TypeScript", "Tailwind CSS", "Vercel"],
     category: "Finance"
+  },
+  {
+    name: "Cash App",
+    icon: "Wallet",
+    color: "var(--bg3)",
+    desc: "Application Android de gestion de cashpoint. Suivi des transactions, entrées et sorties d'argent, avec tableau de bord et gestion des utilisateurs.",
+    techs: ["Flutter", "Dart", "NestJS", "Render"],
+    category: "Application mobile",
+    featured: true
   }
 ];
 
@@ -291,14 +253,8 @@ export const ACHIEVEMENTS = [
   {
     icon: "Wifi",
     title: "Déploiement UniFi",
-    desc: "Déploiement de 3 points d'accès Ubiquiti UniFi et administration du contrôleur",
+    desc: "Déploiement et configuration des points d'accès Ubiquiti UniFi",
     category: "Réseau"
-  },
-  {
-    icon: "Shield",
-    title: "Administration FortiGate",
-    desc: "Administration du pare-feu Fortinet FortiGate et configuration réseau",
-    category: "Sécurité"
   },
   {
     icon: "Cloud",
@@ -315,13 +271,13 @@ export const ACHIEVEMENTS = [
   {
     icon: "Printer",
     title: "Scan-to-Email",
-    desc: "Configuration d'imprimantes Canon/HP et mise en place du Scan-to-Email M365",
+    desc: "Configuration d'imprimantes et mise en place du Scan-to-Email M365",
     category: "Support"
   },
   {
     icon: "ClipboardCheck",
     title: "Système de pointage",
-    desc: "Installation, configuration, déploiement et mise en production du système de pointage",
+    desc: "Installation, configuration et mise en production du système de pointage",
     category: "Infrastructure"
   },
   {
@@ -329,11 +285,5 @@ export const ACHIEVEMENTS = [
     title: "Système d'évaluations",
     desc: "Développement d'un système de gestion des évaluations du personnel avec validation RH",
     category: "Développement"
-  },
-  {
-    icon: "Workflow",
-    title: "Automatisation M365",
-    desc: "Étude de l'automatisation des processus internes avec Power Automate, Forms et Power BI",
-    category: "Automatisation"
   }
 ];

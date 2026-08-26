@@ -1,61 +1,38 @@
-import { useEffect } from 'react';
 import { SKILLS } from '../data';
-import { Server, Network, Cloud, Code2, Rocket, Lock, Zap, Database } from 'lucide-react';
+import { Server, Network, Cloud, Shield, Database, Code2, Rocket } from 'lucide-react';
+
+const iconMap = {
+  Server,
+  Network,
+  Cloud,
+  Shield,
+  Database,
+  Code2,
+  Rocket
+};
 
 export default function Skills() {
-  useEffect(() => {
-    const bars = document.querySelectorAll('.skill-fill');
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach(e => {
-        if (e.isIntersecting) {
-          const w = e.target.getAttribute('data-width');
-          e.target.style.width = w + '%';
-        }
-      });
-    }, { threshold: 0.1 });
-    bars.forEach(b => io.observe(b));
-    return () => io.disconnect();
-  }, []);
-
-  const iconMap = {
-    Server,
-    Network,
-    Cloud,
-    Code2,
-    Rocket,
-    Lock,
-    Zap,
-    Database
-  };
-
   return (
     <section id="skills">
       <div className="section-header">
         <div className="section-label">Compétences</div>
         <h2>
-          Stack <span className="highlight">technique</span>
+          Compétences <span className="highlight">techniques</span>
         </h2>
       </div>
-      <div className="skills-grid">
-        {SKILLS.map((cat, ci) => {
+
+      <div className="skills-grid skills-grid-7">
+        {SKILLS.map((cat) => {
           const IconComponent = iconMap[cat.icon];
           return (
             <div key={cat.cat} className="skill-category">
               <div className="skill-header">
-                {IconComponent && <IconComponent className="skill-icon-svg" size={28} />}
-                <h3>{cat.cat}</h3>
+                {IconComponent && <IconComponent className="skill-icon-svg" size={20} />}
+                <h4>{cat.cat}</h4>
               </div>
-              <div className="skill-list">
+              <div className="skill-tags">
                 {cat.items.map(item => (
-                  <div key={item.name} className="skill-item">
-                    <div className="skill-top">
-                      <span className="skill-name">{item.name}</span>
-                      <span className="skill-percent">{item.pct}%</span>
-                    </div>
-                    <div className="skill-bar">
-                      <div className="skill-fill" data-width={item.pct} style={{ width: '0%' }} />
-                    </div>
-                  </div>
+                  <span key={item} className="skill-tag">{item}</span>
                 ))}
               </div>
             </div>
