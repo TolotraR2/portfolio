@@ -66,7 +66,6 @@ export default function Projects() {
       <div className="section-header">
         <div className="section-label">- Projets -</div>
         <h2>Mes projets</h2>
-        <p className="section-subtitle">Des solutions concrètes que j'ai conçues et développées.</p>
       </div>
 
       <div
